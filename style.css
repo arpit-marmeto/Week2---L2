@@ -59,7 +59,7 @@ nav a{
     width: 10px;
     height: 17px;
 }
-/* 
+
 .splide__arrow {
     background-color: transparent;
     border-radius: 50%; 
@@ -73,7 +73,7 @@ nav a{
     color: white;
     margin-top: -15rem;
     padding: 8px 5px 5px 5px;
-} */
+}
 
 
 @media screen and (max-width: 470px){
