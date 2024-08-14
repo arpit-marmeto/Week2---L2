@@ -16,15 +16,15 @@ const data = {
         "logoURL": "logo/Logo.png",
         "nav": [
             {
-                "title": "home",
+                "title": "Shop",
                 "link": "#"
             },
             {
-                "title": "products",
+                "title": "Brands",
                 "link": "#"
             },
             {
-                "title": "contact",
+                "title": "Contact Us",
                 "link": "#"
             }
         ],
@@ -122,7 +122,7 @@ function createHeaderSection(data) {
     if (headerData.showSignUpButton) {
         const signUpButton = document.createElement('button');
         signUpButton.classList.add('btn');
-        signUpButton.textContent = 'sign up';
+        signUpButton.textContent = 'Sign up';
         nav.appendChild(signUpButton);
     }
 }
