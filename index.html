@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-screen bg-gradient-to-br from-red-500 to-orange-300 p-8 md:pt-6 md:p-16 font-poppins">
-    <header>
+    <header class="flex justify-between items-center w-full font-poppins">
         <!-- Navbar content -->
     </header>
     <section class="mainSection relative top-24 md:flex gap-4 w-full">
@@ -26,7 +26,7 @@
                 <span class="price text-3xl md:text-5xl md:pl-0 pl-32 font-bold font-poppins"></span>
             </div>
         </div>
-        <div class="splide w-90 md:w-2/5 text-center relative">
+        <div class="splide  md:w-2/5 text-center relative">
             <div class="splide__track ml-9 md:ml-28 relative">
                 <ul class="splide__list ">
                     <li class="splide__slide"><img src="" alt="Image 1" class="w-72 h-96 object-cover rounded-full"></li>
@@ -38,10 +38,10 @@
             </div>
             <div class="splide__shadow"></div>
             <div class="splide__arrows absolute inset-x-0 bottom-0 flex justify-center">
-                <button class="splide__arrow splide__arrow--prev bg-transparent rounded-full w-10 h-10 text-xl text-white border-2 border-white font-poppins font-light p-2 -mt-60">
+                <button class="splide__arrow splide__arrow--prev">
                     &lt;
                 </button>
-                <button class="splide__arrow splide__arrow--next bg-transparent rounded-full w-10 h-10 text-xl text-white border-2 border-white font-poppins font-light p-2 -mt-60">
+                <button class="splide__arrow splide__arrow--next">
                     &gt;
                 </button>
             </div>
