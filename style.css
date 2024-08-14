@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-inline: 50px;
+}
+.btn{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-icons{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icons a{
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.social-icons a img{
+    width: 20px;
+    height: 15px;
+}
+.social-icons a:nth-child(1) img{
+    width: 10px;
+    height: 17px;
+}
+
+.splide__arrow {
+    background-color: transparent;
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px; 
+    font-size: 28px; 
+    text-align: center; 
+    border: 2px solid white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: white;
+    margin-top: -15rem;
+    padding: 8px 5px 5px 5px;
+}
+.splide__arrow:hover {
+    cursor: pointer; 
+}
+
+@media screen and (max-width: 470px){
+
+    header{
+        text-align: center;
+    }
+    nav a{
+        display: none;
+    }
+
+    .social-icons{
+        bottom: 25px;
+    }
+ 
+    .social-icons a{
+        height: 30px;
+        width: 30px;
+    }
+    .social-icons a img{
+        width: 16px;
+        height: 13px;
+    }
+    .social-icons a:nth-child(1) img{
+        width: 10px;
+        height: 15px;
+    }
+}

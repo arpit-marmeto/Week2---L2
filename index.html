@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    
+    <link rel="stylesheet" href="splide.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen overflow-hidden bg-gradient-to-br from-red-500 to-orange-300 p-8 md:pt-6 md:p-16 font-poppins">
+    <header>
+        <!-- Navbar content -->
+    </header>
+    <section class="mainSection relative top-24 md:flex gap-4 w-full">
+        <div class="productDetails md:w-3/5 text-white font-sofiaSans md:mt-16">
+            <h2 class="title text-3xl text-center md:text-left md:text-6xl"></h2>
+            <div class="tag flex pl-14 p-3 md:pl-0 text-2xl">
+                <h2 class="tag1"></h2>
+                <h2 class="tag2 text-black"></h2>
+            </div>
+            <div class="md:w-4/5">
+                <p class="desc my-6 text-base md:text-left text-center text-black font-poppins"></p>
+                <span class="price text-3xl md:text-5xl md:pl-0 pl-32 font-bold font-poppins"></span>
+            </div>
+        </div>
+        <div class="splide w-90 md:w-2/5 text-center relative">
+            <div class="splide__track ml-9 md:ml-28 relative">
+                <ul class="splide__list ">
+                    <li class="splide__slide"><img src="" alt="Image 1" class="w-72 h-96 object-cover rounded-full"></li>
+                    <li class="splide__slide"><img src="" alt="Image 2" class="w-72 h-96 object-cover rounded-full"></li>
+                    <li class="splide__slide"><img src="" alt="Image 3" class="w-72 h-96 object-cover rounded-full"></li>
+                    <li class="splide__slide"><img src="" alt="Image 4" class="w-72 h-96 object-cover rounded-full"></li>
+                </ul>
+                <img src="img/shadow.png" alt="" class="shadow w-36 ml-16 pl-3 md:ml-20 h-5">
+            </div>
+            <div class="splide__shadow"></div>
+            <div class="splide__arrows absolute inset-x-0 bottom-0 flex justify-center">
+                <button class="splide__arrow splide__arrow--prev bg-transparent rounded-full w-10 h-10 text-xl text-white border-2 border-white font-poppins font-light p-2 -mt-60">
+                    &lt;
+                </button>
+                <button class="splide__arrow splide__arrow--next bg-transparent rounded-full w-10 h-10 text-xl text-white border-2 border-white font-poppins font-light p-2 -mt-60">
+                    &gt;
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Splide JS -->
+    <script src="splide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
