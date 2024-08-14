@@ -1,13 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     getData();
 
-    // Mobile menu toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuButton.addEventListener('click', function () {
-        mobileMenu.classList.toggle('hidden');
-    });
 });
 
 // JSON Data
@@ -69,20 +62,6 @@ const data = {
                     "imageURL": "img/watch4.png",
                     "background": " linear-gradient(105.54deg, #F24F4F -2.93%, #FFA895 72.14%)"
                 }
-            ],
-            "social-icons": [
-                {
-                    "logo": "logo/facebook.png",
-                    "link": "facebook.com"
-                },
-                {
-                    "logo": "logo/twitter.png",
-                    "link": "twitter.com"
-                },
-                {
-                    "logo": "logo/youtube.png",
-                    "link": "youtube.com"
-                }
             ]
         }
     ]
@@ -138,21 +117,6 @@ function createMainSection(data) {
     productList.forEach((product, index) => {
         splideSlideImg[index].src = product.imageURL;
     });
-
-    // Create social icons
-    const socialIcons = mainSectionData['social-icons'];
-    const socialIconsContainer = document.createElement('div');
-    socialIconsContainer.classList.add('social-icons');
-    socialIcons.forEach(icon => {
-        const iconLink = document.createElement('a');
-        const iconImg = document.createElement('img');
-        iconImg.src = icon.logo;
-        iconImg.alt = icon.link;
-        iconLink.href = icon.link;
-        iconLink.appendChild(iconImg);
-        socialIconsContainer.appendChild(iconLink);
-    });
-    document.body.appendChild(socialIconsContainer);
 
     createElementsForDetails(productList);
 }
